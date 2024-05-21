@@ -1,0 +1,115 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+@import url('./reset.css');
+
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color: #242424;
+  background-color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+
+}
+
+li {
+  list-style-type: none;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+
+}
+
+/**Gallary*/
+
+.go-back {
+  margin-bottom: 24px;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+}
+.gallery-image {
+  width: 360px;
+  height: 200px;
+}
+.gallery-image:hover {
+  transform: scale(1.05);
+}
+
+
+/**FORM*/
+
+.form-section {
+margin: 40px auto;
+}
+.feedback-form {
+  margin-left: 120px;
+  width: 408px;
+  height: 296px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.input-field,
+.input-text {
+  width: 360px;
+  height: 40px;
+  padding: 0 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+}
+.input-text {
+  height: 80px;
+  padding: 8px 16px;
+
+}
+
+.input-field:hover,
+.input-text:hover {
+  border-color: #000;
+}
+
+.input-field:active,
+.input-text:active {
+  border: #808080;
+}
+.btn-submit {
+  width: 96px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #4e75ff;
+  border: none;
+  color: white;
+  margin-top: 8px;
+}
+
+.btn-submit:hover {
+  background-color: #6c8cff;
+}
+
