@@ -48,6 +48,8 @@ searchForm.addEventListener('submit', event => {
       })
       .then(data => {
         if (data.totalHits >= 1) {
+          gallery.innerHTML = ''; // Очищення галереї перед додаванням нових елементів
+
           const elements = data.hits.map(image => {
             // Використовуємо data.hits для доступу до зображень
             const li = document.createElement('li');
@@ -96,7 +98,6 @@ searchForm.addEventListener('submit', event => {
           });
 
 
-          gallery.innerHTML = ''; // Очищення галереї перед додаванням нових елементів
           gallery.append(...elements); //Розміщення в DOM
           lightbox.refresh();
 
