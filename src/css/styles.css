@@ -22,9 +22,6 @@
   -webkit-text-size-adjust: 100%;
 }
 
-li {
-  list-style-type: none;
-}
 .container {
   height: 100%;
   margin: 0;
@@ -113,8 +110,8 @@ li {
   height: 120px;
   animation: spin 2s linear infinite;
   position: fixed;
-  left: 50%;
-  top: 50%;
+  left: 42%;
+  top: 10%;
   transform: translate(-50%, -50%);
   z-index: 9999;
 }
