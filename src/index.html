@@ -4,17 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homework 9</title>
+    <title>Homework 11</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.11.0/simple-lightbox.min.css"
+    />
 
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
 
-    </head>
+  <body>
+    <div class="container">
+      <form class="search-form" autocomplete="off">
+        <input
+          id="input-search"
+          type="text"
+          name="text"
+          placeholder="Search images..."
+          autofocus
+        />
+        <button class="btn-submit" type="submit">Search</button>
+      </form>
 
-    <body>
-      <ul>
-        <li><a href="./1-gallery.html">Task 1</a></li>
-        <li><a href="./2-form.html">Task 2</a></li>
-      </ul>
-    </body>
+      <div class="loader" id="loader" style="display: none">
+        <p>Loading images, please wait...</p>
+      </div>
+
+      <ul class="gallery"></ul>
+    </div>
+    <script src="./main.js" type="module"></script>
+  </body>
 </html>
-
