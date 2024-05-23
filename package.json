@@ -11,6 +11,7 @@
   "devDependencies": {
     "css-loader": "^7.1.2",
     "glob": "^8.1.0",
+    "style-loader": "^4.0.0",
     "vite": "^4.5.3"
   },
   "author": "Iryna Pidkhlibna <iryna.pidkhlibna@gmail.com>",
